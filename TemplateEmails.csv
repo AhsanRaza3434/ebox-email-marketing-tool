@@ -1,0 +1,6 @@
+Emails,Name,Company
+name@example.com,abc1,xyz1
+name@example.com,abc2,xyz2
+name@example.com,abc3,xyz3
+
+"Use the same sequence of columns, and leave the 1st row empty and start with the 2nd row by adding emails*, names (optional) and companies (optional) in the current order. ",,

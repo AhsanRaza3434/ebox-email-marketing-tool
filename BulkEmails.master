@@ -1,0 +1,278 @@
+﻿<%@ Master Language="VB" CodeFile="BulkEmails.master.vb" Inherits="BulkEmails" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="Free Send Emails, Free Email Marketing, Free Bulk Emails, Free Send Bulk Emails, Free Emails Sender, Free Emails, Bulk, Free Business Tool, Promote, Free Marketing">
+    <meta name="author" content="EBox Marketing Solutions, Free Bulk Email Marketing Tool">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, shrink-to-fit=no">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+    <meta property="og:title" content="Free Send Mass Emails, Free Email Marketing Tool | EBox Marketing">
+    <meta property="og:description" content="Free Bulk Email Marketing tool, reach your clients today. Start sending free mass emails to your clients today and promote your brand among potential customers.">
+    <meta property="og:image" content="https://www.eboxmarketing.com/image/EBoxMarketingFavicon.ico">
+    <meta property="og:image:secure_url" content="https://www.eboxmarketing.com/image/EBoxMarketingFavicon.ico">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.eboxmarketing.com">
+    <meta property="og:site_name" content="Send Free Mass Emails, Free Email Marketing Tool | EBox Marketing">
+
+    <meta name="twitter:title" content="Free Send Mass Emails, Free Email Marketing Tool | EBox Marketing">
+    <meta name="twitter:description" content="Free Bulk Email Marketing tool, reach your clients today. Start sending free mass emails to your clients today and promote your brand among potential customers.">
+    <meta name="twitter:image" content="https://www.eboxmarketing.com/image/EBoxMarketingFavicon.ico">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://www.eboxmarketing.com">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="https://www.eboxmarketing.com/image/EBoxMarketingFavicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="https://www.eboxmarketing.com/image/EBoxMarketingFavicon.ico">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="https://www.eboxmarketing.com/image/EBoxMarketingFavicon.ico">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="https://www.eboxmarketing.com/image/EBoxMarketingFavicon.ico">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="https://www.eboxmarketing.com/image/EBoxMarketingFavicon.ico">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="120x120" href="https://www.eboxmarketing.com/apple-touch-icon-120x120-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="152x152" href="https://www.eboxmarketing.com/apple-touch-icon-152x152-precomposed.png" />
+    <link type="image/x-icon" href="https://www.eboxmarketing.com/image/EBoxMarketingFavicon.ico" rel="icon">
+    
+    <!-- Bootstrap & Msg Box CSS File -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    
+    <%--Custom Style Sheet--%>
+    <link href="css/style.css" rel="stylesheet">
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <script src="/Msgboxlib/ConfirmModal.js"></script>
+
+    <%--<script src="Msgboxlib/ConfirmModal.js"></script>--%>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is bulk/mass email marketing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bulk/Mass Email marketing is the most known and effective way to promote your brand and reach your potential clients through the most formal way, Email marketing. You can reach thousands of clients and do marketing of your brand in one go."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How can I send emails in bulk for free and promote my brand?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can easily promote your brand or reach thousands of clients for free with a single click on EBox Marketing Solutions. Just sign up for free, and get started. <br/> <p><a href=https://www.eboxmarketing.com/UserRegistration> Click here</a> to complete the form with your information.</p>"
+        }
+      }, {
+        "@type": "Question",
+        "name": "What do I need to do to send free emails in bulk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You may need a list of emails of your clients in a .csv file which you can upload <a href=https://www.eboxmarketing.com/EmailMarketingTool> here</a>  and start redirecting your clients to your brand instantly."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Where will I be able to see the analytics of the emails I have sent?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once you have signed up and logged in with your credentials, you will be able to see your own Analytical Dashboard to monitor every email that has been sent, followed-up, opened or which are still unopened by the clients.  <br/> <p><a href=https://www.eboxmarketing.com/UserRegistration> Click here</a> to sign up and try it for free.</p>"
+        }
+      }, {
+        "@type": "Question",
+        "name": "Will I be able to follow them up with free bulk emails too?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you will be able to follow them up and also you will be able to check whether your client has opened your email or not for absolutely free."}
+        }]
+    }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F72NBNXD6F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-F72NBNXD6F');
+    </script>
+    
+        <%--<script type="text/javascript" src="https://static.adlane.info/adlane/b62e909faf9b6d44b41934642a249c35/spot_9410.js" defer="true" async="true"></script>--%>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3982382815323279"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page-wrapper2">
+        <div class="nav-wrapper">
+            <div class="grad-bar"></div>
+            <nav class="navbar">
+                <a href="/index.aspx" title="EBox Logo">
+                    <img src="img/EBoxMarketingLogo.png" title="EBox Logo" alt="Ebox Marketing Solutions Logo"></a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav no-search scrollbar style-1">
+                    <li class="nav-item"><a id="HomePage" title="Homepage" runat="server">Home</a></li>
+                    <li class="nav-item" id="DashboardLink" runat="server"><a href="/UserDashboard.aspx" title="Dashboard">Dashboard</a></li>
+                    <li class="nav-item" id="EmailMarketingLinkBtn" runat="server"><a href="/EmailMarketingTool.aspx" title="Bulk Emails Marketing Tool">Bulk Emails Tool</a></li>
+                    <li class="nav-item"><a id="AboutUsLink" runat="server" title="About Email Marketing Tool Page">About</a></li>
+                    <%--<li class="nav-item"><a id="PackagesLink" runat="server">View Packages</a></li>--%>
+                    <li class="nav-item d-none"><a id="TutorialLink" runat="server" title="Tutorial Section">Tutorial</a></li>
+                    <li class="nav-item"><a id="FAQLink" runat="server" title="FAQ Section">FAQ</a></li>
+                    <li class="nav-item"><a id="ContactUsLink" runat="server" title="Contact Us">Contact Us</a></li>
+                    <li class="nav-item ListIcons" id="LoginLink" runat="server"><a href="/UserLogin"><i class="fa fa-sign-in"></i>Login</a></li>
+                    <%--<li class="nav-item ListIcons" id="RegistrationLink" runat="server"><a id="SignUpLink" runat="server"><i class="fa fa-user-plus"></i>Try 3 Days Trial</a></li>--%>
+                    <li class="nav-item ListIcons" id="RegistrationLink" runat="server"><a id="SignUpLink"  title="Signup" runat="server"><i class="fa fa-user-plus"></i>Sign Up</a></li>
+                    <li class="nav-item CurrentUserList" id="CurrentUser" runat="server">
+                        <div class="nav-item dropdown">
+                            <i class="fa fa-user"></i><span id="CurrentUserText" runat="server"></span><%--<i class="DropDownIcon fa fa-angle-double-down"></i>--%>
+                           <%-- <div class="dropdown-menu">
+                                <div class="UserPackage_InfoBody">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="UserPackage_Fields">
+                                                <div class="UserPackage_Icon">
+                                                    <i class="fa fa-id-badge"></i>
+                                                </div>
+                                                <div class="UserPackage_InnerFields">
+                                                <h3>User Name: </h3>
+                                                <span id="UserNameText" runat="server"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="UserPackage_Fields">
+                                                <div class="UserPackage_Icon">
+                                                    <i class="fa fa-id-card-o"></i>
+                                                </div>
+                                                <div class="UserPackage_InnerFields">
+                                                <h3>Subscription Type: </h3>
+                                                <span id="SubscriptionTypeText" runat="server"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="UserPackage_Fields">
+                                                <div class="UserPackage_Icon">
+                                                    <i id="packageStatusIcon" runat="server"></i>
+                                                </div>
+                                                <div class="UserPackage_InnerFields">
+                                                <h3>Package Status: </h3>
+                                                <span id="PackageStatusText" runat="server"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="UserPackage_Fields">
+                                                <div class="UserPackage_Icon">
+                                                    <i class="fa fa-calendar"></i>
+                                                </div>
+                                                <div class="UserPackage_InnerFields">
+                                                <h3>Subscription Date: </h3>
+                                                <span id="SubscriptionDateText" runat="server"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="UserPackage_Fields">
+                                                <div class="UserPackage_Icon">
+                                                    <i class="fa fa-calendar-times-o"></i>
+                                                </div>
+                                                <div class="UserPackage_InnerFields">
+                                                <h3>Expiry Date: </h3>
+                                                <span id="ExpiryDateText" runat="server"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span></span>
+                            </div>--%>
+                        </div>
+                    </li>
+                    <li class="nav-item ListIcons"><a id="SignOutLink" title="Sign out" runat="server"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+                </ul>
+            </nav>
+            <div class="grad-bar2"></div>
+        </div>
+    </div>
+    <div class="MasterInner">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <!--==========================
+    Footer
+  ============================-->
+    <div class="grad-bar"></div>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h3><a href="/index.aspx" title="EBox Logo Footer">EBOX <span>Marketing Solutions</span></a></h3>
+                <p class="links"><%--<a href="/PrivacyPolicy.html">Privacy Policy</a> · <a href="/RefundPolicy.html">Refund Policy</a> · <a href="#PackagesLink">See Packages</a> · --%><a id="Homepage2" runat="server" title="Homepage link">Home</a> · <a id="FAQLink2" title="FAQ Link" runat="server">FAQ</a> · <a href="/EmailMarketingTool.aspx">Send Bulk Emails</a> . <a id="ContactUsLink2" title="Contact Us Link" runat="server">Contact Us</a></p>
+                <p class="company-name">eboxmarketing.com © <span id="year"></span></p>
+                <ul class="social-icon-List">
+                    <li><a href="https://www.facebook.com/eboxmarketingsolutions/" title="EBox Facebook Page" target="_blank"><span class="social-icon social-facebook"><i class="fa fa-facebook"></i></span></a></li>
+                    <li><a href="https://www.instagram.com/eboxmarketingsolutions/" title="EBox Instagram Page" target="_blank"><span class="social-icon social-instagram"><i class="fa fa-instagram"></i></span></a></li>
+                    <li><a href="https://www.linkedin.com/company/ebox-marketing-solutions/" title="EBox Linkedin Page" target="_blank"><span class="social-icon social-linkedin"><i class="fa fa-linkedin"></i></span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC3AZnQNFdi6zaUfgbLZidQQ" title="EBox Youtube Page" target="_blank"><span class="social-icon social-youtube"><i class="fa fa-youtube"></i></span></a></li>
+                    <li><a href="https://twitter.com/EboxMarketing" target="_blank" title="EBox Twitter Page"><span class="social-icon social-twitter"><i class="fa fa-twitter"></i></span></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <div class="FooterInfoSection">
+                    <span class="fa fa-map-marker footer-contacts-icon"></span>
+                    <p><span class="new-line-span">Suite # 46, 2nd Floor, Big City Plaza, Lahore, Pakistan</span></p>
+                </div>
+                <div class="FooterInfoSection">
+                    <i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-left">+92 317 4092224</p>
+                </div>
+                <div class="FooterInfoSection">
+                    <i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p><a href="https://mail.google.com/mail/u/0/?fs=1&to=help@eboxmarketing.com&su=A+Chance+To+Make+A+Difference&body=Dear+EBox,+I+have+some+valuable+information+to+share+with+you.+I+have+noticed+that+%3Ctype+your+valuable+suggestions+and+feedbacks+here%3E.Thank+you.&tf=cm" title="Email us Google link" target="_blank">help@eboxmarketing.com</a></p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-4 footer-about pt-3">
+                <h4>About Ebox Marketing Solutions</h4>
+                <p>
+                    Ebox Marketing Solutions is an open platform for businesses to reach their clients through the world's known marketing solution, Bulk Email Marketing with a single click for absolutely free. Where you don't have to worry about ending up in the spam folder of your clients ever again. This tool is absolutely free and developed to reach the client in the most effective way.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="grad-bar"></div>
+
+    <!-- Bootstrap Javascript File -->
+    <script src="https://use.fontawesome.com/2db8191a55.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.7.1/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+            toolbar_mode: 'floating',
+        });
+        $('.menu-toggle').click(function () {
+            $(".nav").toggleClass("mobile-nav");
+            $(this).toggleClass("is-active");
+        });
+        $(".CurrentUserList").click(function () {
+            $(".dropdown-menu").toggleClass("d-block");
+        });
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+
+    </script>
+    
+</body>
+</html>

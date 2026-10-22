@@ -1,0 +1,26 @@
+# Real configuration and secrets: copy Web.config.example to Web.config locally
+Web.config
+Web.*.config
+credentials.json
+*.pubxml
+*.publishproj
+
+# Build output, packages and IDE files
+Bin/
+bin/
+obj/
+packages/
+node_modules/
+.vs/
+.vscode/
+*.suo
+*.user
+
+# User data
+App_Data/
+Attachments/
+InnerAttachments/
+ImportedEmails/
+
+# User guide PDF (screenshots may show account details)
+image/Instructions.pdf
